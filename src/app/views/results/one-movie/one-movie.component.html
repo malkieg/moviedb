@@ -1,6 +1,6 @@
 <div>
-  <button mat-raised-button color="warn"(click)="cancel()">
-    Back</button>
+  <button mat-raised-button (click)="cancel()" class="backButton">
+    <img src="https://img.icons8.com/material/24/000000/arrow-pointing-left.png"></button>
 </div>
 <app-search></app-search>
 
@@ -10,7 +10,7 @@
       <mat-card-title>{{movie.title}}</mat-card-title>
       <mat-card-subtitle>{{movie.tagline}}</mat-card-subtitle>
       <mat-card-content>
-        <h3>Release Date: {{movie.releaseDate}}</h3>
+        <h4>Release Date: {{movie.releaseDate}}</h4>
         <p>{{movie.overview}}</p>
       </mat-card-content>
     </mat-card-header>

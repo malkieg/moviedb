@@ -29,6 +29,6 @@ movie: Movies;
 
   // allows user to go back to the results page
   cancel() {
-    this.location.back(); // <-- go back to previous location on cancel
+    this.location.back();
   }
 }
