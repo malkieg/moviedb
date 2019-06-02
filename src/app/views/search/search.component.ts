@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {MoviedbService} from '../../models/moviedb.service';
-import {Movies} from '../../models/movies';
+
 
 @Component({
   selector: 'app-search',
@@ -8,31 +7,13 @@ import {Movies} from '../../models/movies';
   styleUrls: ['./search.component.scss']
 })
 export class SearchComponent implements OnInit {
-  query: string;
-  movies: Movies[];
-  id: number;
-  title: string;
-  releaseDate: string;
 
-  displayedColumns: string[] = ['title', 'releaseDate', 'seeMore'];
-
-  constructor(private movieDb: MoviedbService) { }
+query: string;
+  constructor() { }
 
   ngOnInit() {
   }
 
-  // This will search the database and return the first twenty movies with the search word
-  search() {
-    this.movieDb.movieSearch(this.query).subscribe( res => {
-        if (res[0]) {
-          this.movies = [];
-          res.forEach((item) => {
-            item = new Movies(item);
-            this.movies.push(item);
-          });
-        }
 
-    });
-  }
 
 }

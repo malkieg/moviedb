@@ -1,3 +1,9 @@
+<div>
+  <button mat-raised-button color="warn"(click)="cancel()">
+    Back</button>
+</div>
+<app-search></app-search>
+
 <div *ngIf="movie">
   <mat-card class="card">
     <mat-card-header>
@@ -6,7 +12,6 @@
       <mat-card-content>
         <h3>Release Date: {{movie.releaseDate}}</h3>
         <p>{{movie.overview}}</p>
-<!--        {{movie.posterPath}}-->
       </mat-card-content>
     </mat-card-header>
   </mat-card>

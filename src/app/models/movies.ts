@@ -4,7 +4,7 @@ export class Movies {
   overview: string;
   releaseDate: string;
   tagline: string;
-  posterPath: string;
+  popularity: number;
 
   constructor(args?) {
     if (args) {
@@ -13,7 +13,7 @@ export class Movies {
       this.overview = args.overview;
       this.releaseDate = args.release_date;
       this.tagline = args.tagline;
-      this.posterPath = args.poster_path;
+      this.popularity = args.popularity;
     }
   }
 }

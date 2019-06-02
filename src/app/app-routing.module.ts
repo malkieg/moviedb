@@ -7,7 +7,8 @@ import {OneMovieComponent} from './views/results/one-movie/one-movie.component';
 const routes: Routes = [
   {path: '', pathMatch: 'full', redirectTo: 'search'},
   {path: 'search', component: SearchComponent },
-  {path: 'result/:id', component: OneMovieComponent}
+  {path: 'result/:id', component: OneMovieComponent},
+  {path: 'results/:query', component: MoviesComponent}
 ];
 
 @NgModule({
