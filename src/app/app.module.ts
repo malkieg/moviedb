@@ -10,6 +10,7 @@ import {FormsModule} from '@angular/forms';
 import {MatTableModule} from '@angular/material/table';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { OneMovieComponent } from './views/results/one-movie/one-movie.component';
+import {MatCardModule} from '@angular/material';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { OneMovieComponent } from './views/results/one-movie/one-movie.component
     HttpClientModule,
     FormsModule,
     MatTableModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]

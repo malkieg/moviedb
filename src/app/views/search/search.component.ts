@@ -13,7 +13,6 @@ export class SearchComponent implements OnInit {
   id: number;
   title: string;
   releaseDate: string;
-  overview: string;
 
   displayedColumns: string[] = ['title', 'releaseDate', 'seeMore'];
 
@@ -34,10 +33,6 @@ export class SearchComponent implements OnInit {
         }
 
     });
-  }
-// reroute to movies result component
-  viewMore(id) {
-    console.log(id);
   }
 
 }
