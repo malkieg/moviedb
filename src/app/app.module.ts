@@ -7,19 +7,25 @@ import { MoviesComponent } from './views/results/movies/movies.component';
 import { HttpClientModule } from '@angular/common/http';
 import { SearchComponent } from './views/search/search.component';
 import {FormsModule} from '@angular/forms';
+import {MatTableModule} from '@angular/material/table';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { OneMovieComponent } from './views/results/one-movie/one-movie.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     MoviesComponent,
-    SearchComponent
+    SearchComponent,
+    OneMovieComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    MatTableModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
